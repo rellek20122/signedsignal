@@ -147,11 +147,30 @@
 		</div>
 	</main>
 
+
 	<footer class="site-footer">
-		<div class="footer-inner">&copy; <span id="year"></span> SignedSignal</div>
-		<a href="https://signedsignal.dev">SignedSIgnal</a> © 2026 by <a href="https://github.com/rellek20122">Keller Dowell</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+		<div class="footer-inner">
+			<span>
+				<a href="https://signedsignal.dev">SignedSignal</a>
+				&copy; <span id="year"></span> by
+				<a href="https://github.com/rellek20122">Keller Dowell</a>
+				is licensed under
+				<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
+					target="_blank" rel="license noopener noreferrer">
+					CC BY-NC-ND 4.0
+				</a>
+			</span>
+
+			<div class="license-icons" aria-label="Creative Commons BY-NC-ND">
+				<img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="Creative Commons">
+				<img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="Attribution">
+				<img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="NonCommercial">
+				<img src="https://mirrors.creativecommons.org/presskit/icons/nd.svg" alt="NoDerivatives">
+			</div>
+		</div>
 	</footer>
 
+	
 	<script>
 		document.querySelector("#year").textContent = new Date().getFullYear();
 	</script>
