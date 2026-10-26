@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f4f6f3">
+	<title>Links | SignedSignal</title>
+	<link rel="icon" type="image/png" href="./favicon.png?v=3">
+	<style>
+		:root {
+			color-scheme: light;
+			font-family: "Segoe UI", sans-serif;
+			color: #192b26;
+			background: #f4f6f3;
+			font-synthesis: none;
+			text-rendering: optimizeLegibility;
+			--ink: #192b26;
+			--muted: #61716b;
+			--line: #d8e0da;
+			--accent: #087e68;
+			--surface: #fff;
+		}
+
+		* { box-sizing: border-box; }
+
+		body {
+			min-width: 320px;
+			min-height: 100vh;
+			margin: 0;
+			display: grid;
+			grid-template-rows: auto 1fr auto;
+		}
+
+		a { color: inherit; }
+
+		.site-header, .site-footer { background: var(--surface); }
+		.site-header { border-bottom: 1px solid var(--line); }
+
+		.header-inner, .footer-inner, .page-content {
+			width: min(100% - 40px, 960px);
+			margin-inline: auto;
+		}
+
+		.header-inner {
+			min-height: 68px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 24px;
+		}
+
+		.brand {
+			display: inline-flex;
+			align-items: center;
+			gap: 10px;
+			font-size: 18px;
+			font-weight: 700;
+			text-decoration: none;
+		}
+
+		.brand img { width: 32px; height: 32px; object-fit: contain; }
+
+		.site-nav { display: flex; gap: 24px; }
+		.site-nav a { color: var(--muted); font-size: 14px; text-decoration: none; }
+		.site-nav a:hover, .site-nav a:focus-visible { color: var(--accent); }
+
+		main { padding-block: clamp(48px, 9vh, 88px); }
+		.page-content { max-width: 800px; }
+
+		.eyebrow {
+			margin: 0 0 12px;
+			color: var(--accent);
+			font-size: 12px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		h1 { margin: 0; font-size: clamp(32px, 6vw, 48px); line-height: 1.1; }
+		.intro { margin: 14px 0 36px; color: var(--muted); font-size: 17px; line-height: 1.6; }
+
+		.link-columns {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 48px;
+		}
+
+		.link-group h2 {
+			margin: 0 0 8px;
+			font-size: 15px;
+			font-weight: 700;
+		}
+
+		.link-list { margin: 0; padding: 0; list-style: none; }
+
+		.link-list li { border-bottom: 1px solid var(--line); }
+
+		.link-list a {
+			min-height: 64px;
+			padding: 12px 2px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 16px;
+			color: var(--ink);
+			text-decoration: none;
+		}
+
+		.link-list a:hover .link-name,
+		.link-list a:focus-visible .link-name { color: var(--accent); }
+
+		.link-name { font-weight: 600; }
+		.link-detail { display: block; margin-top: 3px; color: var(--muted); font-size: 13px; font-weight: 400; }
+		.link-arrow { color: var(--accent); font-size: 18px; }
+
+		.site-footer { border-top: 1px solid var(--line); }
+
+		.footer-inner {
+			min-height: 60px;
+			display: flex;
+			align-items: center;
+			color: var(--muted);
+			font-size: 13px;
+		}
+
+		.footer-inner a { color: inherit; }
+
+		@media (max-width: 600px) {
+			.header-inner, .footer-inner, .page-content { width: min(100% - 32px, 960px); }
+			.header-inner { min-height: 60px; }
+			.site-nav { gap: 16px; }
+			.link-columns { grid-template-columns: 1fr; gap: 30px; }
+			.intro { margin-bottom: 28px; }
+			.footer-inner { padding-block: 14px; }
+		}
+	</style>
+</head>
+<body>
+	<header class="site-header">
+		<div class="header-inner">
+			<a class="brand" href="./index.html">
+				<img src="./favicon.png" alt="" width="32" height="32">
+				<span>SignedSignal</span>
+			</a>
+			<nav class="site-nav" aria-label="Main navigation">
+				<a href="./index.html">Home</a>
+				<a href="#links" aria-current="page">Links</a>
+			</nav>
+		</div>
+	</header>
+
+	<main id="links">
+		<div class="page-content">
+			<p class="eyebrow">SignedSignal</p>
+			<h1>Links</h1>
+			<p class="intro">Find the site and profiles around the web.</p>
+
+			<div class="link-columns">
+				<section class="link-group" aria-labelledby="site-links-title">
+					<h2 id="site-links-title">The site</h2>
+					<ul class="link-list">
+						<li>
+							<a href="https://signedsignal.dev" target="_blank" rel="noopener noreferrer">
+								<span class="link-name">SignedSignal NOT AVALIBLE<span class="link-detail">signedsignal.dev</span></span>
+								<span class="link-arrow" aria-hidden="true">&#8599;</span>
+							</a>
+						</li>
+						<li>
+							<a href="./index.html">
+								<span class="link-name">Home<span class="link-detail">Back to the main page</span></span>
+								<span class="link-arrow" aria-hidden="true">&#8594;</span>
+							</a>
+						</li>
+					</ul>
+				</section>
+
+				<section class="link-group" aria-labelledby="profile-links-title">
+					<h2 id="profile-links-title">Profiles</h2>
+					<ul class="link-list">
+						<li>
+							<a href="https://github.com/rellek20122" target="_blank" rel="noopener noreferrer">
+								<span class="link-name">GitHub<span class="link-detail">github.com/rellek20122</span></span>
+								<span class="link-arrow" aria-hidden="true">&#8599;</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/rellek20122?tab=repositories" target="_blank" rel="noopener noreferrer">
+								<span class="link-name">Repositories<span class="link-detail">Projects on GitHub</span></span>
+								<span class="link-arrow" aria-hidden="true">&#8599;</span>
+							</a>
+						</li>
+                        <li>
+							<a href="https://github.com/rellek20122/Pistol-CLI" target="_blank" rel="noopener noreferrer">
+								<span class="link-name">Pistol-CLI<span class="link-detail">GitHub repository</span></span>
+								<span class="link-arrow" aria-hidden="true">&#8599;</span>                           
+                        </li>
+					</ul>
+				</section>
+			</div>
+		</div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="footer-inner">
+			<span>&copy; <span id="year"></span> SignedSignal by <a href="https://github.com/rellek20122">Keller Dowell</a> · <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license">CC BY-NC-ND 4.0</a></span>
+		</div>
+	</footer>
+
+	<script>
+		document.querySelector("#year").textContent = new Date().getFullYear();
+	</script>
+</body>
+</html>
